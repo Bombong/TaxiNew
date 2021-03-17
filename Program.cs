@@ -1,9 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace latihan
+namespace Program
 {
-    public class Mahasiswa
+    public class Program
     {
-        
+        static void Main(string[] args)
+        {
+            coding1 taxi = new coding1();
+
+            taxi.drivername = " Bambang ";
+            taxi.onduty = true;
+            taxi.numpassenger = 10;
+
+            taxi.TaxiInfo();
+            taxi.pickuppassenger();
+            taxi.dropoffpassenger();
+
+            Console.ReadKey();
+        }
     }
 }
